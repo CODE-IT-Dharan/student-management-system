@@ -5,6 +5,7 @@ use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\CompanyController;
 use App\Http\Controllers\Api\CourseController;
 use App\Http\Controllers\Api\EnquiryController;
+use App\Http\Controllers\Api\FiscalYearController;
 use App\Http\Controllers\Api\InstallmentController;
 use App\Http\Controllers\Api\StudentController;
 use Illuminate\Http\Request;
@@ -32,7 +33,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('courses', CourseController::class);
     Route::apiResource('enquiries', EnquiryController::class);
     Route::apiResource('admissions', AdmissionController::class);
-    Route::apiResource('installments', InstallmentController::class);
 });
 
 
